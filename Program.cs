@@ -12,12 +12,14 @@ namespace doitiente
             Console.WriteLine("Đổi tiền sang VNĐ");
             Console.WriteLine("Nhập số tiền USD muốn chuyển:");
             USD = Convert.ToInt32(Console.ReadLine());
-
-
-            int VND;
-            VND = USD * 23000;
-            Console.WriteLine("{0} USD = {1} VND ", USD, VND);
-            Console.Read();
+            a(USD);
+        }
+            static int a(int usd)
+        {
+            int tien = 23000 * usd;
+            Console.WriteLine("USD = {0} VND", tien);
+            return tien;
+        }
         }
     }
 }
